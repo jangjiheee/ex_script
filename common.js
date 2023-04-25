@@ -17,28 +17,36 @@ window.onload = function() {
 
 
     // 설문생성
+
     var addS = document.querySelectorAll(".addSurvey");
-    var sLine = document.querySelectorAll("tbody")
+    var sLine = document.querySelectorAll("tbody");
+    var num = 1;
+
 
     addS.forEach((cont, index) => {
-        cont.addEventListener("click", () =>{
+        cont.addEventListener("click", () => {
 
-            let row = document.createElement("tr");
-            let html = 
-            "<tr>" +
-                "<td>설문F</td>" +
+
+            let inputValue = document.getElementById("valueTitle").value;
+            document.getElementById("valueTitle").innerHTML = inputValue;
+
+
+            let row = document.createElement('tr');
+            let html =
+                "<tr>" +
+                "<td>" + inputValue + "</td>" +
                 "<td>10</td>" +
                 "<td>3</td>" +
                 "<td>2023.03.21 <span class='update_time'>15:40</span></td>" +
                 "<td>" +
-                    "<div class='chart'>" +
-                        "<p>응답 통계</p>" +
-                    "</div>" +
-                    "<div class='setting'>" +
-                        "<p>관리</p>" +
-                    "</div>" +
+                "<div class='chart'>" +
+                "<p>응답 통계</p>" +
+                "</div>" +
+                "<div class='setting'>" +
+                "<p>관리</p>" +
+                "</div>" +
                 "</td>" +
-            "</tr>"
+                "</tr>";
             row.innerHTML = html;
             sLine[index].appendChild(row);
         })
@@ -65,6 +73,30 @@ window.onload = function() {
 
 
 
+
+
+
+    document.addEventListener('click', function(e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+
+        if(target.hasAttribute('data-toggle') && target.getAttribute('data-toggle') == 'modal') {
+            if(target.hasAttribute('data-target')) {
+                var m_ID = target.getAttribute('data-target');
+                document.getElementById(m_ID).classList.add('open');
+                e.preventDefault();
+            }
+        }
+
+        // Close modal window with 'data-dismiss' attribute or when the backdrop is clicked
+        if((target.hasAttribute('data-dismiss') && target.getAttribute('data-dismiss') == 'modal') || target.classList.contains('modal')) {
+            var modal = document.querySelector('[class="modal open"]');
+            modal.classList.remove('open');
+            e.preventDefault();
+        }
+    }, false);
+
+
     // search 팝업
     var searchBtn = document.querySelector(".searchBtn");
     var searchBack = document.querySelector(".searchBack");
@@ -77,4 +109,9 @@ window.onload = function() {
     closeBtn.addEventListener("click", function() {
         searchBack.classList.remove("on")
     })
+
+
+
+
+
 }

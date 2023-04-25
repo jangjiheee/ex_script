@@ -7,8 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css">
-    <script src="/common.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -43,7 +42,7 @@
                                     <li class="listItem">설문 그룹_2</li>
                                 </ul>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -52,7 +51,7 @@
                         <div class="tabCont on">
                             <p class="view-title">설문 그룹_1</p>
                             <div class="button-box">
-                                <button type="button" class="addSurvey">+ 설문생성</button>
+                                <button type="button" data-target="simpleModal_1" data-toggle="modal">+ 설문생성</button>
                             </div>
                             <div class="contents__view--box">
                                 <table class="contents__table">
@@ -71,7 +70,7 @@
                                             <th></th>
                                         </tr>
                                     </thead>
-                                    
+
                                     <tbody>
                                         <tr>
                                             <td>설문A</td>
@@ -150,7 +149,7 @@
                         <div class="tabCont">
                             <p class="view-title">설문 그룹_2</p>
                             <div class="button-box">
-                                <button type="button" class="addSurvey">+ 설문생성</button>
+                                <button type="button" id="myBtn">+ 설문생성</button>
                             </div>
                             <div class="contents__view--box">
                                 <table class="contents__table">
@@ -169,7 +168,7 @@
                                             <th></th>
                                         </tr>
                                     </thead>
-                                        
+
                                     <tbody>
                                         <tr>
                                             <td>설문A</td>
@@ -268,5 +267,34 @@
             </div>
         </div>
     </div>
+
+<div id="simpleModal_1" class="modal">
+    <div class="modal-window">
+        <div class="modalLine">
+            <p>설문제목</p>
+            <input id="valueTitle" type="text" placeholder="제목을 입력하세요." value="설문">
+        </div>
+        <div class="modalLine">
+            <p>페이지 타입</p>
+            <select name="" id="">
+                <option value="">단계형1</option>
+                <option value="">단계형2</option>
+                <option value="">단계형3</option>
+                <option value="">단계형4</option>
+                <option value="">단계형5</option>
+                <option value="">단계형6</option>
+            </select>
+        </div>
+        <div class="btnLine">
+            <span data-dismiss="modal" class="addSurvey">
+                설문생성
+            </span>
+            <button data-dismiss="modal">Close</button>
+        </div>
+    </div>
+
+
+</div>
 </body>
+<script src="./common.js"></script>
 </html>
