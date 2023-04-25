@@ -386,17 +386,146 @@
                                                     </div>
                                                 </label>
                                             </div>
-                                            
-                                        </div>
-                                    </div>
+                                                                        <ul class="tabMenu">
+                                <li class="menu">항목</li>
+                                <li class="menu">테마</li>
+                                <li class="menu">설정</li>
+                            </ul>
+                            <div class="tabBox">
+                                <div class="tabTop">
+                                    <h4 class="tabTitle">항목 종류</h4>
+                                    <select name="tab" id="itemType">
+                                        <option value="statement">단순문장(Statement)</option>
+                                        <option value="ka">가문장</option>
+                                        <option value="na">나문장</option>
+                                        <option value="da">다문장</option>
+                                    </select>
                                 </div>
-                            </div>
+                                <div class="tabBottom">
+                                    <h4 class="tabTitle">항목 설정</h4>
+                                    <div class="select-type">
+                                        <div class="type-box">
+                                            <div class="type-list">
+                                                <label>
+                                                    <input type="radio" id="essential" name="essential">
+                                                    <span>필수</span>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <input type="radio" id="multiple" name="multiple">
+                                                    <span>다중 선택</span>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <input type="radio" id="random" name="random">
+                                                    <span>무작위 배치</span>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <input type="radio" id="other" name="other">
+                                                    <span>'기타' 옵션</span>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <input type="radio" id="column" name="column">
+                                                    <span>세로 정렬</span>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <input type="radio" id="maxNum" name="maxNum">
+                                                    <span>최대 입력 값</span>
+                                                    <div class="numb-box">
+                                                        <input type="text" placeholder="0~9999999">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>날짜 유형</span>
+                                                    <select name="date" id="dateType">
+                                                        <option value="eightNum">YYYYMMDD</option>
+                                                        <option value="sixNum">YYMMDD</option>
+                                                    </select>
+                                                    <select name="classify" id="classify">
+                                                        <option value="slash">/</option>
+                                                        <option value="dot">.</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>평가 유형</span>
+                                                    <select name="estimate" id="estimate">
+                                                        <option value="star">별표</option>
+                                                        <option value="number">숫자</option>
+                                                    </select>
+                                                    <select name="estimateNum" id="estimateNum">
+                                                        <option value="Vzero">0</option>
+                                                        <option value="Vone">1</option>
+                                                        <option value="Vtwo">2</option>
+                                                        <option value="Vthree">3</option>
+                                                        <option value="Vfour">4</option>
+                                                        <option value="Vfive">5</option>
+                                                        <option value="Vsix">6</option>
+                                                        <option value="Vseven">7</option>
+                                                        <option value="Veight">8</option>
+                                                        <option value="Vnine">9</option>
+                                                        <option value="Vten">10</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>점수 범위</span>
+                                                    <select name="minNum" id="minNum">
+                                                        <option value="Minzero">0</option>
+                                                        <option value="Minone">1</option>
+                                                        <option value="Mintwo">2</option>
+                                                        <option value="Minthree">3</option>
+                                                        <option value="Minfour">4</option>
+                                                        <option value="Minfive">5</option>
+                                                        <option value="Minsix">6</option>
+                                                        <option value="Minseven">7</option>
+                                                        <option value="Mineight">8</option>
+                                                        <option value="Minnine">9</option>
+                                                        <option value="Minten">10</option>
+                                                    </select>
+                                                    <span>~</span>
+                                                    <select name="maxNum" id="maxNum">
+                                                        <option value="Maxzero">0</option>
+                                                        <option value="Maxone">1</option>
+                                                        <option value="Maxtwo">2</option>
+                                                        <option value="Maxthree">3</option>
+                                                        <option value="Maxfour">4</option>
+                                                        <option value="Maxfive">5</option>
+                                                        <option value="Maxsix">6</option>
+                                                        <option value="Maxseven">7</option>
+                                                        <option value="Maxeight">8</option>
+                                                        <option value="Maxnine">9</option>
+                                                        <option value="Maxten">10</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                             <div class="tabBox">
                                 !테마 탭!
                             </div>
                             <div class="tabBox">
                                 !설정 탭!
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                         </div>
                     </div>
                 </div>
