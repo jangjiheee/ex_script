@@ -1,0 +1,15 @@
+.view-inner.plus_tab {
+    display: flex;
+    height: 100%;
+}
+
+.view-inner.plus_tab .view-cont {
+    width: 80%;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.view-inner.plus_tab .view-tab {
+    width: 20%;
+    padding: 10px;
+}
