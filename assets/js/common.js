@@ -112,6 +112,19 @@ window.onload = function() {
 
 
 
+    // 설문 편집 탭
+    var rightTab = document.querySelectorAll(".menu")
+    var rightTabcont = document.querySelectorAll(".tabBox")
 
+    rightTab.forEach((list, idx) => {
+        list.addEventListener("click", () => {
+            for(i=0; i<rightTab.length; i++) {
+                rightTab[i].classList.remove("on");
+                rightTabcont[i].classList.remove("on");
+            }
 
+            list.classList.add("on");
+            rightTabcont[idx].classList.add("on");
+        })
+    })
 }

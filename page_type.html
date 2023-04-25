@@ -254,11 +254,11 @@
                         </div>
                         <div class="view-tab">
                             <ul class="tabMenu">
-                                <li class="menu">항목</li>
+                                <li class="menu on">항목</li>
                                 <li class="menu">테마</li>
                                 <li class="menu">설정</li>
                             </ul>
-                            <div class="tabBox">
+                            <div class="tabBox on">
                                 <div class="tabTop">
                                     <h4 class="tabTitle">항목 종류</h4>
                                     <select name="tab" id="itemType">
@@ -274,37 +274,37 @@
                                         <div class="type-box">
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="radio" id="essential" name="essential">
+                                                    <input type="checkbox" id="essential" name="essential">
                                                     <span>필수</span>
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="radio" id="multiple" name="multiple">
+                                                    <input type="checkbox" id="multiple" name="multiple">
                                                     <span>다중 선택</span>
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="radio" id="random" name="random">
+                                                    <input type="checkbox" id="random" name="random">
                                                     <span>무작위 배치</span>
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="radio" id="other" name="other">
+                                                    <input type="checkbox" id="other" name="other">
                                                     <span>'기타' 옵션</span>
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="radio" id="column" name="column">
+                                                    <input type="checkbox" id="column" name="column">
                                                     <span>세로 정렬</span>
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="radio" id="maxNum" name="maxNum">
+                                                    <input type="checkbox" id="maxNum" name="maxNum">
                                                     <span>최대 입력 값</span>
                                                     <div class="numb-box">
                                                         <input type="text" placeholder="0~9999999">
@@ -382,6 +382,12 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="tabBox">
+                                !테마 탭!
+                            </div>
+                            <div class="tabBox">
+                                !설정 탭!
                             </div>
                         </div>
                     </div>

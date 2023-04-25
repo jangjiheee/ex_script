@@ -110,5 +110,52 @@
 
 .view-inner.plus_tab .view-tab {
     width: 20%;
+}
+
+.view-inner.plus_tab .view-tab .tabMenu {
+    display: flex;
+}
+
+.view-inner.plus_tab .view-tab .tabMenu .menu {
+    width: 33.33%;
     padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.view-inner.plus_tab .view-tab .tabMenu .menu.on {
+    border-bottom: none;
+}
+
+.view-inner.plus_tab .view-tab .tabMenu .menu:last-child {
+    border-right: none;
+}
+
+.view-inner.plus_tab .view-tab .tabBox {
+    display: none;
+}
+
+.view-inner.plus_tab .view-tab .tabBox.on {
+    display: block;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabTop {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom {
+    padding: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .tabTitle {
+    margin-bottom: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list {
+    margin-bottom: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"] {
+    display: none; 
 }
