@@ -132,19 +132,23 @@ window.onload = function() {
     
     
     var multiple = document.querySelector("#multiple");
-    var changeChk = document.querySelectorAll("input[type='radio']");
-    multiple.checked === true;
 
-    // console.log(true);
+    multiple.addEventListener("change", () => {
+        var changeChk = document.querySelectorAll("input[type='radio']");
+        changeChk.forEach((chk) => {
+    
+            multiple === false;
+            multiple.checked === true;
 
-    console.log(changeChk);
-    changeChk.forEach((chk) => {
-        if (true) {
-            chk.setAttribute("type", "checkbox");
-            console.log(chk);
-        } else{
-            chk.setAttribute("type", "radio");
-        }
+    
+            if (true) {
+                chk.setAttribute("type", "checkbox");
+                console.log(chk);
+            } else {
+                // chk.setAttribute("type", "radio");
+                return false;
+            }
+        })
     })
 
 
