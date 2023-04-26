@@ -135,76 +135,17 @@ window.onload = function() {
     var changeChk = document.querySelectorAll("input[type='radio']");
     multiple.checked === true;
 
-    console.log(true);
+    // console.log(true);
 
     console.log(changeChk);
-    changeChk.forEach( item , () => {
-        item.setAttribute("type", "checkbox");
+    changeChk.forEach((chk) => {
+        if (true) {
+            chk.setAttribute("type", "checkbox");
+            console.log(chk);
+        } else{
+            chk.setAttribute("type", "radio");
+        }
     })
-
-    // if (multiple.checked) {
-
-    // }
-
-    rightTab.forEach((list, idx) => {
-        list.addEventListener("click", () => {
-            for(i=0; i<rightTab.length; i++) {
-                rightTab[i].classList.remove("on");
-                rightTabcont[i].classList.remove("on");
-            }
-
-            list.classList.add("on");
-            rightTabcont[idx].classList.add("on");
-        })
-    })
-
-    // 다중선택
-    
-    
-    var multiple = document.querySelector("#multiple");
-    var changeChk = document.querySelectorAll("input[type='radio']");
-    multiple.checked === true;
-
-    console.log(true);
-
-    console.log(changeChk);
-    changeChk.forEach( item , () => {
-        item.setAttribute("type", "checkbox");
-    })
-
-    // if (multiple.checked) {
-
-    // }
-
-    rightTab.forEach((list, idx) => {
-        list.addEventListener("click", () => {
-            for(i=0; i<rightTab.length; i++) {
-                rightTab[i].classList.remove("on");
-                rightTabcont[i].classList.remove("on");
-            }
-
-            list.classList.add("on");
-            rightTabcont[idx].classList.add("on");
-        })
-    })
-
-    // 다중선택
-    
-    
-    var multiple = document.querySelector("#multiple");
-    var changeChk = document.querySelectorAll("input[type='radio']");
-    multiple.checked === true;
-
-    console.log(true);
-
-    console.log(changeChk);
-    changeChk.forEach( item , () => {
-        item.setAttribute("type", "checkbox");
-    })
-
-    // if (multiple.checked) {
-
-    // }
 
 
 }
