@@ -122,6 +122,7 @@
     text-align: center;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    cursor: pointer;
 }
 .view-inner.plus_tab .view-tab .tabMenu .menu.on {
     border-bottom: none;
@@ -154,8 +155,81 @@
 
 .view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list {
     margin-bottom: 10px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list label {
+    flex-direction: column;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list label .column {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list span,
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list span {
+    margin-bottom: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label .column input {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label .column  select:not(:last-child) {
+    margin-bottom: 7px;
 }
 
 .view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"] {
-    display: none; 
+    appearance: none;
+    position: relative;
+    border: max(1px, 0.1em) solid #ccc;
+    border-radius: 12px;
+    width: 40px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    background: #555;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: 1px;
+    top: 2px;
+    transition: left 250ms linear;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:checked {
+    background-color: rgb(90, 190, 248);
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:checked:after {
+    background-color: #fff;
+    left: calc(100% - 20px);
 }

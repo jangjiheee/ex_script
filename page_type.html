@@ -274,108 +274,116 @@
                                         <div class="type-box">
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="checkbox" id="essential" name="essential">
                                                     <span>필수</span>
+                                                    <input type="checkbox" id="essential" name="essential">
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="checkbox" id="multiple" name="multiple">
                                                     <span>다중 선택</span>
+                                                    <input type="checkbox" id="multiple" name="multiple">
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="checkbox" id="random" name="random">
                                                     <span>무작위 배치</span>
+                                                    <input type="checkbox" id="random" name="random">
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="checkbox" id="other" name="other">
                                                     <span>'기타' 옵션</span>
+                                                    <input type="checkbox" id="other" name="other">
                                                 </label>
                                             </div>
                                             <div class="type-list">
                                                 <label>
-                                                    <input type="checkbox" id="column" name="column">
                                                     <span>세로 정렬</span>
+                                                    <input type="checkbox" id="column" name="column">
                                                 </label>
                                             </div>
-                                            <div class="type-list">
+                                            <div class="type-list column-list">
                                                 <label>
-                                                    <input type="checkbox" id="maxNum" name="maxNum">
-                                                    <span>최대 입력 값</span>
+                                                    <div class="column">
+                                                        <span>최대 입력 값</span>
+                                                        <input type="checkbox" id="maxNum" name="maxNum">
+                                                    </div>
                                                     <div class="numb-box">
                                                         <input type="text" placeholder="0~9999999">
                                                     </div>
                                                 </label>
                                             </div>
-                                            <div class="type-list">
+                                            <div class="type-list select-list">
                                                 <label>
                                                     <span>날짜 유형</span>
-                                                    <select name="date" id="dateType">
-                                                        <option value="eightNum">YYYYMMDD</option>
-                                                        <option value="sixNum">YYMMDD</option>
-                                                    </select>
-                                                    <select name="classify" id="classify">
-                                                        <option value="slash">/</option>
-                                                        <option value="dot">.</option>
-                                                    </select>
+                                                    <div class="column">
+                                                        <select name="date" id="dateType">
+                                                            <option value="eightNum">YYYYMMDD</option>
+                                                            <option value="sixNum">YYMMDD</option>
+                                                        </select>
+                                                        <select name="classify" id="classify">
+                                                            <option value="slash">/</option>
+                                                            <option value="dot">.</option>
+                                                        </select>
+                                                    </div>
                                                 </label>
                                             </div>
-                                            <div class="type-list">
+                                            <div class="type-list select-list">
                                                 <label>
                                                     <span>평가 유형</span>
-                                                    <select name="estimate" id="estimate">
-                                                        <option value="star">별표</option>
-                                                        <option value="number">숫자</option>
-                                                    </select>
-                                                    <select name="estimateNum" id="estimateNum">
-                                                        <option value="Vzero">0</option>
-                                                        <option value="Vone">1</option>
-                                                        <option value="Vtwo">2</option>
-                                                        <option value="Vthree">3</option>
-                                                        <option value="Vfour">4</option>
-                                                        <option value="Vfive">5</option>
-                                                        <option value="Vsix">6</option>
-                                                        <option value="Vseven">7</option>
-                                                        <option value="Veight">8</option>
-                                                        <option value="Vnine">9</option>
-                                                        <option value="Vten">10</option>
-                                                    </select>
+                                                    <div class="column">
+                                                        <select name="estimate" id="estimate">
+                                                            <option value="star">별표</option>
+                                                            <option value="number">숫자</option>
+                                                        </select>
+                                                        <select name="estimateNum" id="estimateNum">
+                                                            <option value="Vzero">0</option>
+                                                            <option value="Vone">1</option>
+                                                            <option value="Vtwo">2</option>
+                                                            <option value="Vthree">3</option>
+                                                            <option value="Vfour">4</option>
+                                                            <option value="Vfive">5</option>
+                                                            <option value="Vsix">6</option>
+                                                            <option value="Vseven">7</option>
+                                                            <option value="Veight">8</option>
+                                                            <option value="Vnine">9</option>
+                                                            <option value="Vten">10</option>
+                                                        </select>
+                                                    </div>
                                                 </label>
                                             </div>
-                                            <div class="type-list">
+                                            <div class="type-list select-list">
                                                 <label>
                                                     <span>점수 범위</span>
-                                                    <select name="minNum" id="minNum">
-                                                        <option value="Minzero">0</option>
-                                                        <option value="Minone">1</option>
-                                                        <option value="Mintwo">2</option>
-                                                        <option value="Minthree">3</option>
-                                                        <option value="Minfour">4</option>
-                                                        <option value="Minfive">5</option>
-                                                        <option value="Minsix">6</option>
-                                                        <option value="Minseven">7</option>
-                                                        <option value="Mineight">8</option>
-                                                        <option value="Minnine">9</option>
-                                                        <option value="Minten">10</option>
-                                                    </select>
-                                                    <span>~</span>
-                                                    <select name="maxNum" id="maxNum">
-                                                        <option value="Maxzero">0</option>
-                                                        <option value="Maxone">1</option>
-                                                        <option value="Maxtwo">2</option>
-                                                        <option value="Maxthree">3</option>
-                                                        <option value="Maxfour">4</option>
-                                                        <option value="Maxfive">5</option>
-                                                        <option value="Maxsix">6</option>
-                                                        <option value="Maxseven">7</option>
-                                                        <option value="Maxeight">8</option>
-                                                        <option value="Maxnine">9</option>
-                                                        <option value="Maxten">10</option>
-                                                    </select>
+                                                    <div class="row">
+                                                        <select name="minNum" id="minNum">
+                                                            <option value="Minzero">0</option>
+                                                            <option value="Minone">1</option>
+                                                            <option value="Mintwo">2</option>
+                                                            <option value="Minthree">3</option>
+                                                            <option value="Minfour">4</option>
+                                                            <option value="Minfive">5</option>
+                                                            <option value="Minsix">6</option>
+                                                            <option value="Minseven">7</option>
+                                                            <option value="Mineight">8</option>
+                                                            <option value="Minnine">9</option>
+                                                            <option value="Minten">10</option>
+                                                        </select>
+                                                        <span>~</span>
+                                                        <select name="maxNum" id="maxNum">
+                                                            <option value="Maxzero">0</option>
+                                                            <option value="Maxone">1</option>
+                                                            <option value="Maxtwo">2</option>
+                                                            <option value="Maxthree">3</option>
+                                                            <option value="Maxfour">4</option>
+                                                            <option value="Maxfive">5</option>
+                                                            <option value="Maxsix">6</option>
+                                                            <option value="Maxseven">7</option>
+                                                            <option value="Maxeight">8</option>
+                                                            <option value="Maxnine">9</option>
+                                                            <option value="Maxten">10</option>
+                                                        </select>
+                                                    </div>
                                                 </label>
                                             </div>
                                             
