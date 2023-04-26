@@ -1,0 +1,47 @@
+.contents__view .view-cont.step {
+    padding: 10px;
+}
+
+.contents__view .view-cont.step .step_cont {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap {
+    display: inline-flex;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap h3 {
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap .question_num {
+    margin-right: 30px;
+    position: relative;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap .question_num:after {
+    position: absolute;
+    content: "*";
+    left: 100%;
+    top: 0;
+    font-size: 22px;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap .question_title .title-box {
+    margin-bottom: 20px;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap .question_title .check-list .list-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.contents__view .view-cont.step .step_cont .cont_wrap .question_title .check-list .list-wrap label:not(:last-child) {
+    margin-bottom: 10px;
+}

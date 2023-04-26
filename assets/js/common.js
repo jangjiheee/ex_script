@@ -132,24 +132,50 @@ window.onload = function() {
     
     
     var multiple = document.querySelector("#multiple");
-
+    var changeChk = document.querySelectorAll("input[type='radio']");
+    
     multiple.addEventListener("change", () => {
-        var changeChk = document.querySelectorAll("input[type='radio']");
-        changeChk.forEach((chk) => {
-    
-            multiple === false;
-            multiple.checked === true;
-
-    
-            if (true) {
+        if (multiple.checked) {
+            changeChk.forEach((chk) => {
                 chk.setAttribute("type", "checkbox");
-                console.log(chk);
-            } else {
-                // chk.setAttribute("type", "radio");
-                return false;
-            }
-        })
+            })
+        } else {
+            changeChk.forEach((chk) => {
+                chk.setAttribute("type", "radio");
+            })
+        }
     })
 
+    // 최대 입력 값
 
+    const maxNum = document.getElementById("maxNum");
+    const textArea = document.querySelector(".text-able");
+
+    let maxtoggle = true;
+
+    maxNum.addEventListener("change", () => {
+        if(maxtoggle) {
+            textArea.removeAttribute("disabled", false);
+        } else {
+            textArea.setAttribute("disabled", "disabled");
+        }
+        maxtoggle = !maxtoggle;
+    })
+
+    // 최소 최대
+
+    const downNum = document.querySelector("#downNum");
+    const downChild = downNum.children;
+    const upNumb = document.querySelector("#upNum");
+    const upChild = upNumb.children;
+    
+    console.log(minChild);
+    console.log(upNumb);
+
+    for (i=0; i<10; i++) {
+        if (downChild[i] > upChild[i]){
+            alert("범위를 올바르게 입력해주세요");
+        }
+        return;
+    }
 }

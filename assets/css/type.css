@@ -154,7 +154,7 @@
 }
 
 .view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     padding: 4px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -236,4 +236,28 @@
 .view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:checked:after {
     background-color: #fff;
     left: calc(100% - 20px);
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list .row select {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list .row span {
+    margin: 0 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap {
+    padding: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .tab-cont-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
