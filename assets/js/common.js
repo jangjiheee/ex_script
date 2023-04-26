@@ -127,4 +127,24 @@ window.onload = function() {
             rightTabcont[idx].classList.add("on");
         })
     })
+
+    // 다중선택
+    
+    
+    var multiple = document.querySelector("#multiple");
+    var changeChk = document.querySelectorAll("input[type='radio']");
+    multiple.checked === true;
+
+    console.log(true);
+
+    console.log(changeChk);
+    changeChk.forEach( item , () => {
+        item.setAttribute("type", "checkbox");
+    })
+
+    // if (multiple.checked) {
+
+    // }
+
+
 }

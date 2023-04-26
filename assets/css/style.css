@@ -52,6 +52,17 @@ ul, li, ol {
     justify-content: space-between;
 }
 
+.plus-btn {
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
 .top .top__logo {
     display: flex;
     align-items: center;
@@ -162,12 +173,6 @@ ul, li, ol {
 
 .contents__left-group--top .contents__left-group--list .list-title .table_contents .click_list .devide .cont li {
     padding: 7px 0;
-}
-
-.contents__left-group .list-title  .plus-btn {
-    border: 1px solid #000;
-    width: 20px;
-    height: 20px;
 }
 
 .contents__left-group--list .list-group {
@@ -284,8 +289,7 @@ ul, li, ol {
 
 
 .contents__view {
-    width: 1000px;
-    padding: 10px;
+    width: 100%;
 }
 
 .contents__view .view-inner {
@@ -297,6 +301,7 @@ ul, li, ol {
     top: 0;
     left: 0;
     display: none;
+    padding: 10px;
 }
 .contents__view .view-inner .tabCont.on {
     display: block;

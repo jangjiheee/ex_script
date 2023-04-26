@@ -1,0 +1,367 @@
+.view-inner.plus_tab {
+    display: flex;
+    height: 100%;
+}
+
+.view-inner.plus_tab .view-cont {
+    width: 78%;
+    border-right: 1px solid #ccc;
+    position: relative;
+}
+
+.view-inner.plus_tab .view-cont .scroll {
+    height: 650px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+::-webkit-scrollbar { width: 17px; }
+::-webkit-scrollbar-track { background-color:#fff; border-left: 1px solid #cccc;}
+::-webkit-scrollbar-thumb { background: #7a7a7a; } 
+::-webkit-scrollbar-thumb:hover { background: #7a7a7a; } 
+::-webkit-scrollbar-thumb:active { background: #808080; }
+::-webkit-scrollbar-button:start:decrement {
+    display:block;
+    height: 18px;
+    background: url("../images/up-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+::-webkit-scrollbar-button:end:increment {
+    display:block;
+    height: 18px;
+    background: url("../images/down-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+
+}
+
+.view-inner.plus_tab .view-cont .scroll .cont-box {
+    height: 265px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 50px;
+}
+
+.view-inner.plus_tab .view-cont .scroll .cont-box.triangle {
+    position: relative;
+}
+
+.view-inner.plus_tab .view-cont .scroll .cont-box.triangle:before {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 0px;
+    width: 0px;
+    content: "";
+    border-top: 100px solid #e7e7e7cc;
+    border-right: 100px solid transparent;
+    border-radius: 5px;
+}
+
+.view-inner.plus_tab .view-cont .scroll .cont-box:not(last-child) {
+    margin-bottom: 10px;
+}
+
+.view-inner.plus_tab .view-cont .scroll .cont-box .sub_title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.view-inner.plus_tab .view-cont .pagination {
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-inner.plus_tab .view-cont .pagination .pagination-left,
+.view-inner.plus_tab .view-cont .pagination .pagination-right {
+    display: flex;
+    height: 100%;
+}
+
+.view-inner.plus_tab .view-cont .pagination .pagination-left .border-right {
+    border-right: 1px solid #ccc;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-inner.plus_tab .view-cont .pagination .pagination-right .border-left {
+    border-left: 1px solid #ccc;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-inner.plus_tab .view-tab {
+    width: 22%;
+}
+
+.view-inner.plus_tab .view-tab .tabMenu {
+    display: flex;
+}
+
+.view-inner.plus_tab .view-tab .tabMenu .menu {
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.view-inner.plus_tab .view-tab .tabMenu .menu.on {
+    border-bottom: none;
+}
+
+.view-inner.plus_tab .view-tab .tabMenu .menu:last-child {
+    border-right: none;
+}
+
+.view-inner.plus_tab .view-tab .tabBox {
+    display: none;
+}
+
+.view-inner.plus_tab .view-tab .tabBox.on {
+    display: block;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabTop {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabBottom {
+    padding: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tabTitle {
+    margin-bottom: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list {
+    margin-bottom: 6px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.view-inner.plus_tab .view-tab .tabBox .type-list label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label {
+    flex-direction: column;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label .column {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list input {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label .num-form {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label .num-form #item-form {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list span,
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list span {
+    margin-bottom: 10px;
+}
+
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label .column input {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label .column  select:not(:last-child) {
+    margin-bottom: 7px;
+}
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list #limitNum {
+    width: 100%;
+    padding: 4px 0 4px 5px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label span {
+    margin-bottom: 0;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label input[type="radio"]:checked {
+    background-color: rgb(90, 190, 248);
+    position: relative;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label input[type="radio"]:checked::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    border: max(1px, 0.1em) solid #ccc;
+    border-radius: 12px;
+    width: 40px;
+    height: 24px;
+    background-color: #fff;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"]:after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    background: #555;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: 1px;
+    top: 2px;
+    transition: left 250ms linear;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"]:checked {
+    background-color: rgb(90, 190, 248);
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"]:checked:after {
+    background-color: #fff;
+    left: calc(100% - 20px);
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .row select {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .row span {
+    margin: 0 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap {
+    padding: 10px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .tab-cont-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 8px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box {
+    position: relative;
+    cursor: pointer;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box .theme-pop {
+    position: absolute;
+    right: -1px;
+    top: 24px;
+    width: 100px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box .theme-pop.active {
+    display: block;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box .theme-pop .list-wrap li {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap.setting .tab-cont-title {
+    padding: 0;
+}
