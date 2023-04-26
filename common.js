@@ -112,6 +112,64 @@ window.onload = function() {
 
 
 
+    const dropBox = document.querySelector('#dropBox');
+    const dropZone = document.querySelector('#drop-zone');
+    const inputElement = document.getElementById('myfile');
+    const menu = document.getElementById('burger-wrap');
+    const img = document.querySelector('img');
+    const p = document.getElementById('dropMessage')
 
+    inputElement.addEventListener('change', function(e) {
+        const clickFile = this.files[0];
+        if(clickFile) {
+            dropBox.classList.add('on');
+            img.style = "display:block;";
+            p.style = "display: none;";
+            let imgTop = img.offsetTop;
+            let imgLeft = img.offsetLeft;
+            console.log(imgLeft);
+            console.log(imgTop);
+            menu.style = "top:" + imgTop +"px";
+            menu.style = "left:" + imgLeft + "px";
+            const reader = new FileReader();
+            reader.readAsDataURL(clickFile);
+            reader.onloadend = function() {
+                const result = reader.result;
+                let src = this.result;
+                img.src = src;
+                img.alt = clickFile.name
+            }
+        }
+    })
+    dropZone.addEventListener('click', () => inputElement.click());
+    dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+    dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        img.style = "display:block;";
+        let imgTop = img.offsetTop;
+        let imgLeft = img.offsetLeft;
+        console.log(imgLeft);
+        console.log(imgTop);
+        let file = e.dataTransfer.files[0];
+
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onloadend = function() {
+            e.preventDefault()
+            p.style = "display: none;";
+            let src = this.result;
+            img.src = src;
+            img.alt = file.name
+        }
+    });
+
+
+    function classToggle() {
+        this.classList.toggle('open');
+    }
+
+    document.querySelector('#burger-wrap').addEventListener('click', classToggle);
 
 }

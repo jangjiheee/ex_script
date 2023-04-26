@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./common.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner-box">
+            <h1 class="blind">목록</h1>
+            <h2 class="title">설문 목록</h2>
+            <div class="top">
+                <div class="top__logo">
+                    <a href="#">LOGO</a>
+                </div>
+                <div class="top__user-info">
+                    <button type="button" class="top__user-info--button">User Info</button>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="contents__left-group">
+                    <div class="contents__left-group--top">
+                        <div class="search">
+                            <input type="text" class="search" placeholder="검색어를 입력해주세요.">
+                            <i class="fa fa-search searchBtn" aria-hidden="true"></i>
+                        </div>
+                        <div class="contents__left-group--list">
+                            <div class="list-title">
+                                <div class="table_contents">
+                                    <p>작업 그룹</p>
+                                    <button type="button" class="plus-btn">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="listItem on">설문 그룹_1</li>
+                                    <li class="listItem">설문 그룹_2</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contents__view">
+                    <div id="dropBox">
+                        <div id="burger-wrap">
+                            <a class="burger"><span></span></a>
+                        </div>
+                        <div id="drop-zone">
+                            <img src="" alt="">
+                            <p id="dropMessage">이미지를 업로드해주세요.</p>
+                            <input type="file" id="myfile" hidden>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 검색창 팝업 -->
+    <div class="searchBack">
+        <div class="search-pop">
+            <p>설문</p>
+            <ul class="job-group">
+                <li>설문 그룹_1</li>
+                <li>설문 그룹_1</li>
+            </ul>
+            <ul class="survey">
+                <li>설문A</li>
+                <li>설문B</li>
+            </ul>
+            <div class="closeBtn">
+                <button>닫기</button>
+            </div>
+        </div>
+    </div>
+
+<div id="simpleModal_1" class="modal">
+    <div class="modal-window">
+        <div class="modalLine">
+            <p>설문제목</p>
+            <input id="valueTitle" type="text" placeholder="제목을 입력하세요." value="설문">
+        </div>
+        <div class="modalLine">
+            <p>페이지 타입</p>
+            <select name="" id="">
+                <option value="">단계형1</option>
+                <option value="">단계형2</option>
+                <option value="">단계형3</option>
+                <option value="">단계형4</option>
+                <option value="">단계형5</option>
+                <option value="">단계형6</option>
+            </select>
+        </div>
+        <div class="btnLine">
+            <span data-dismiss="modal" class="addSurvey">
+                설문생성
+            </span>
+            <button data-dismiss="modal">Close</button>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
