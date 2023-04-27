@@ -154,7 +154,7 @@
 }
 
 .view-inner.plus_tab .view-tab .tabBox .type-list {
-    margin-bottom: 9px;
+    margin-bottom: 6px;
     padding: 4px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -165,6 +165,7 @@
     cursor: pointer;
     width: 100%;
     justify-content: space-between;
+    font-size: 15px;
 }
 
 .view-inner.plus_tab .view-tab .tabBox .type-list.column-list label {

@@ -374,7 +374,104 @@
                                 </div>
                             </div>
                             <div class="tabBox">
-                                !설정 탭!
+                                <div class="tab-cont-wrap setting">
+                                    <div class="tab-cont-title">
+                                        <h4 class="tabTitle">설정</h4>
+                                    </div>
+                                    <div class="select-type">
+                                        <div class="type-box">
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>진행률 바</span>
+                                                    <input type="checkbox" id="progress" name="progress">
+                                                </label>
+                                            </div>
+                                            <div class="type-list column-list">
+                                                <label>
+                                                    <div class="column">
+                                                        <span>항목 번호 형식</span>
+                                                        <input type="checkbox" id="numForm" name="numForm">
+                                                    </div>
+                                                    <div class="num-form">
+                                                        <select name="item-form" id="item-form" disabled="disabled">
+                                                            <option value="qNum">Q1, Q2...</option>
+                                                            <option value="addZero">Q01, Q02...</option>
+                                                            <option value="fullName">Question</option>
+                                                        </select>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>답변 자동 저장</span>
+                                                    <input type="checkbox" id="random" name="random">
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>이전 버튼 사용</span>
+                                                    <input type="checkbox" id="other" name="other">
+                                                </label>
+                                            </div>
+                                            <div class="type-list select-list">
+                                                <label>
+                                                    <span>테이블 열 개수 제한</span>
+                                                    <select name="limitNum" id="limitNum">
+                                                        <option value="limitzero">0</option>
+                                                        <option value="limitone">1</option>
+                                                        <option value="limittwo">2</option>
+                                                        <option value="limitthree">3</option>
+                                                        <option value="limitfour">4</option>
+                                                        <option value="limitfive">5</option>
+                                                        <option value="limitsix">6</option>
+                                                        <option value="limitseven">7</option>
+                                                        <option value="limiteight">8</option>
+                                                        <option value="limitnine">9</option>
+                                                        <option value="limitten">10</option>
+                                                    </select>
+                                                </label>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-cont-title">
+                                        <h4 class="tabTitle">퀴즈</h4>
+                                    </div>
+                                    <div class="select-type">
+                                        <div class="type-box">
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>퀴즈 사용</span>
+                                                    <input type="checkbox" id="progress" name="progress">
+                                                </label>
+                                            </div>
+                                            <div class="type-list select-list">
+                                                <label>
+                                                    <span>결과 공개</span>
+                                                    <div class="result-open">
+                                                        <div class="open-wrap">
+                                                            <label>
+                                                                <span>응답 후 바로 공개</span>
+                                                                <input type="radio" name="open-list" value="straight">
+                                                            </label>
+                                                            <label>
+                                                                <span>검토 후 공개</span>
+                                                                <input type="radio" name="open-list" value="review">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="type-list">
+                                                <label>
+                                                    <span>응답 후 점수 공개</span>
+                                                    <input type="checkbox" id="random" name="random">
+                                                </label>
+                                            </div>                             
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
