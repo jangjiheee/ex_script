@@ -183,9 +183,9 @@ window.onload = function() {
     console.log(upNumb);
 
     for (i=0; i<10; i++) {
-        if (downChild[i] > upChild[i]){
+        if (downChild[i] >= upChild[i]){
             alert("범위를 올바르게 입력해주세요");
         }
-        return;
+        return false;
     }
 }
