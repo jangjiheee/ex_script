@@ -4,7 +4,7 @@
 }
 
 .view-inner.plus_tab .view-cont {
-    width: 80%;
+    width: 78%;
     border-right: 1px solid #ccc;
     position: relative;
 }
@@ -109,7 +109,7 @@
 }
 
 .view-inner.plus_tab .view-tab {
-    width: 20%;
+    width: 22%;
 }
 
 .view-inner.plus_tab .view-tab .tabMenu {
@@ -149,17 +149,17 @@
     padding: 10px;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .tabTitle {
+.view-inner.plus_tab .view-tab .tabBox .tabTitle {
     margin-bottom: 10px;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list {
+.view-inner.plus_tab .view-tab .tabBox .type-list {
     margin-bottom: 9px;
     padding: 4px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list label {
+.view-inner.plus_tab .view-tab .tabBox .type-list label {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -167,45 +167,108 @@
     justify-content: space-between;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list label {
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label {
     flex-direction: column;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list label .column {
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label .column {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list input {
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list input {
     width: 100%;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.column-list span,
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list span {
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label .num-form {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list label .num-form #item-form {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.column-list span,
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list span {
     margin-bottom: 10px;
 }
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label {
+
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label .column {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label .column {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label .column input {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label .column input {
     width: 100%;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list label .column  select:not(:last-child) {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list label .column  select:not(:last-child) {
     margin-bottom: 7px;
 }
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list #limitNum {
+    width: 100%;
+    padding: 4px 0 4px 5px;
+}
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"] {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open {
+    width: 100%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label span {
+    margin-bottom: 0;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label input[type="radio"]:checked {
+    background-color: rgb(90, 190, 248);
+    position: relative;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .result-open .open-wrap label input[type="radio"]:checked::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"] {
     appearance: none;
     position: relative;
     border: max(1px, 0.1em) solid #ccc;
@@ -215,7 +278,7 @@
     background-color: #fff;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:after {
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"]:after {
     position: absolute;
     content: "";
     width: 18px;
@@ -229,26 +292,26 @@
     transition: left 250ms linear;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:checked {
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"]:checked {
     background-color: rgb(90, 190, 248);
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list input[type="checkbox"]:checked:after {
+.view-inner.plus_tab .view-tab .tabBox .type-list input[type="checkbox"]:checked:after {
     background-color: #fff;
     left: calc(100% - 20px);
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list .row {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .row {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list .row select {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .row select {
     width: 100%;
 }
 
-.view-inner.plus_tab .view-tab .tabBox .tabBottom .type-list.select-list .row span {
+.view-inner.plus_tab .view-tab .tabBox .type-list.select-list .row span {
     margin: 0 10px;
 }
 
@@ -260,4 +323,44 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+    padding: 0 8px;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box {
+    position: relative;
+    cursor: pointer;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box .theme-pop {
+    position: absolute;
+    right: -1px;
+    top: 24px;
+    width: 100px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box .theme-pop.active {
+    display: block;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap .theme-list li .icon_box .theme-pop .list-wrap li {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.view-inner.plus_tab .view-tab .tabBox .tab-cont-wrap.setting .tab-cont-title {
+    padding: 0;
 }

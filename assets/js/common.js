@@ -53,16 +53,7 @@ window.onload = function() {
     })
 
     // 목차 팝업
-    // var plusBtn = document.querySelector(".plus-btn");
-    // var clickList = document.querySelector(".click_list");
-    // // plusBtn.forEach((plus, idx) => {
-    // //     plus.addEventListener("click", () => {
-    // //         clickList[idx].classList.toggle("active");
-    // //     })
-    // // })
-    // plusBtn.addEventListener("click", () => {
-    //     clickList.classList.toggle("active");
-    // })
+
     var plusBtn = document.querySelectorAll(".plus-btn");
     var clickList = document.querySelectorAll(".click_list");
     plusBtn.forEach((plus, idx) => {
@@ -70,10 +61,6 @@ window.onload = function() {
             clickList[idx].classList.toggle("active");
         })
     })
-
-
-
-
 
 
     document.addEventListener('click', function(e) {
@@ -100,7 +87,7 @@ window.onload = function() {
     // search 팝업
     var searchBtn = document.querySelector(".searchBtn");
     var searchBack = document.querySelector(".searchBack");
-    console.log(searchBtn);
+
     searchBtn.addEventListener("click", function() {
         searchBack.classList.add("on");
     })
@@ -129,7 +116,7 @@ window.onload = function() {
     })
 
     // 다중선택
-    
+
     
     var multiple = document.querySelector("#multiple");
     var changeChk = document.querySelectorAll("input[type='radio']");
@@ -146,7 +133,7 @@ window.onload = function() {
         }
     })
 
-    // 최대 입력 값
+    // 최대 입력 값, 항목 형식 활성화
 
     const maxNum = document.getElementById("maxNum");
     const textArea = document.querySelector(".text-able");
@@ -157,10 +144,33 @@ window.onload = function() {
         if(maxtoggle) {
             textArea.removeAttribute("disabled", false);
         } else {
-            textArea.setAttribute("disabled", "disabled");
+            textArea.setAttribute("disabled", true);
         }
         maxtoggle = !maxtoggle;
     })
+    
+    const numForm = document.getElementById("numForm");
+    const itemForm = document.getElementById("item-form");
+
+    numForm.addEventListener("change", () => {
+        if(maxtoggle) {
+            itemForm.removeAttribute("disabled", false);
+        } else {
+            itemForm.setAttribute("disabled", true);
+        }
+        maxtoggle = !maxtoggle;
+    })
+
+    // 테마 팝업
+    const clickTem = document.querySelectorAll(".click-theme");
+
+    clickTem.forEach((clickitem) => {
+        clickitem.addEventListener("click", function() {
+            this.nextElementSibling.classList.toggle("active");
+        })
+    })
+
+
 
     // 최소 최대
 
