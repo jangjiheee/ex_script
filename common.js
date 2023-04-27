@@ -172,4 +172,25 @@ window.onload = function() {
 
     document.querySelector('#burger-wrap').addEventListener('click', classToggle);
 
+
+
+
+    const minprice = document.querySelector('#minprice');
+    const maxprice = document.querySelector('#maxprice');
+
+    minprice.addEventListener('change', (e) => {
+        e.preventDefault();
+
+        const selMin = minprice.value;
+        console.log(selMin);
+
+        const optVal = parseInt(selMin.options);
+        console.log(optVal);
+
+        var values = Array.from(document.getElementById("maxprice").options).map(e => e.value);
+
+        console.log(values);
+
+
+    });
 }
