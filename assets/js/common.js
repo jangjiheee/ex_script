@@ -1,12 +1,21 @@
 window.onload = function() {
 
+
+
+
+
+
+
+
+
+
     // list- tab
     var tabBtn = document.querySelectorAll(".listItem");
     var tabCont = document.querySelectorAll(".tabCont");
 
     tabBtn.forEach((item, idx) => {
         item.addEventListener("click", () => {
-            for(i=0; i<tabBtn.length; i++) {
+            for(i = 0;i < tabBtn.length;i++) {
                 tabBtn[i].classList.remove("on");
                 tabCont[i].classList.remove("on");
             }
@@ -90,12 +99,12 @@ window.onload = function() {
 
     searchBtn.addEventListener("click", function() {
         searchBack.classList.add("on");
-    })
+    });
 
     var closeBtn = document.querySelector(".closeBtn");
     closeBtn.addEventListener("click", function() {
         searchBack.classList.remove("on")
-    })
+    });
 
 
 
@@ -105,7 +114,7 @@ window.onload = function() {
 
     rightTab.forEach((list, idx) => {
         list.addEventListener("click", () => {
-            for(i=0; i<rightTab.length; i++) {
+            for(i = 0;i < rightTab.length;i++) {
                 rightTab[i].classList.remove("on");
                 rightTabcont[i].classList.remove("on");
             }
@@ -113,16 +122,20 @@ window.onload = function() {
             list.classList.add("on");
             rightTabcont[idx].classList.add("on");
         })
-    })
+    });
+
+
+
+
 
     // 다중선택
 
-    
+
     var multiple = document.querySelector("#multiple");
     var changeChk = document.querySelectorAll("input[type='radio']");
-    
+
     multiple.addEventListener("change", () => {
-        if (multiple.checked) {
+        if(multiple.checked) {
             changeChk.forEach((chk) => {
                 chk.setAttribute("type", "checkbox");
             })
@@ -131,7 +144,7 @@ window.onload = function() {
                 chk.setAttribute("type", "radio");
             })
         }
-    })
+    });
 
     // 최대 입력 값, 항목 형식 활성화
 
@@ -147,8 +160,8 @@ window.onload = function() {
             textArea.setAttribute("disabled", true);
         }
         maxtoggle = !maxtoggle;
-    })
-    
+    });
+
     const numForm = document.getElementById("numForm");
     const itemForm = document.getElementById("item-form");
 
@@ -159,7 +172,7 @@ window.onload = function() {
             itemForm.setAttribute("disabled", true);
         }
         maxtoggle = !maxtoggle;
-    })
+    });
 
     // 테마 팝업
     const clickTem = document.querySelectorAll(".click-theme");
@@ -168,7 +181,7 @@ window.onload = function() {
         clickitem.addEventListener("click", function() {
             this.nextElementSibling.classList.toggle("active");
         })
-    })
+    });
 
 
 
@@ -178,16 +191,16 @@ window.onload = function() {
     const downChild = downNum.children;
     const upNumb = document.querySelector("#upNum");
     const upChild = upNumb.children;
-    
+
     console.log(minChild);
     console.log(upNumb);
 
-    for (i=0; i<10; i++) {
-        if (downChild[i] > upChild[i]){
+    for(i = 0;i < 10;i++) {
+        if(downChild[i] > upChild[i]) {
             alert("범위를 올바르게 입력해주세요");
         }
         return;
-    }
+    };
 
-    // 수정확인 테스트
+
 }

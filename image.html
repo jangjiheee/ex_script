@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css">
-    <script src="./common.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/sangho.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -49,63 +49,44 @@
                 </div><div id="dropBox">
 
                     <div class="container">
-                        <div class="styled-select">
-                            <div class="a33">
-                            <div class="a44">44</div>
-                            <div class="a55">55</div>
-                        </div>
-                            <div class="a33">
-                            <div class="a44">44</div>
-                            <div class="A66">66</div>
-                        </div>
                             <select id="minprice" name="minprice">
-                                <option value="0" selected="selected">No mnimum price</option>
-                                <option value="50000">&pound; 50,000</option>
-                                <option value="60000">&pound; 60,000</option>
-                                <option value="70000">&pound; 70,000</option>
-                                <option value="80000">&pound; 80,000</option>
-                                <option value="90000">&pound; 90,000</option>
-                                <option value="100000">&pound; 100,000</option>
-                                <option value="110000">&pound; 110,000</option>
-                                <option value="120000">&pound; 120,000</option>
-                                <option value="200000">&pound; 200,000</option>
-                                <option value="300000">&pound; 300,000</option>
-                                <option value="400000">&pound; 400,000</option>
-                                <option value="500000">&pound; 500,000</option>
-                                <option value="600000">&pound; 600,000</option>
-                                <option value="700000">&pound; 700,000</option>
-                                <option value="800000">&pound; 800,000</option>
-                                <option value="900000">&pound; 900,000</option>
-                                <option value="1000000">&pound;1 million+</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
                             </select>
-                        </div>
-                        <div class="styled-select">
                             <select id="maxprice" name="maxprice">
-                                <option value="2000000" selected="selected">No maximum price</option>
-                                <option value="50000">&pound; 50,000</option>
-                                <option value="60000">&pound; 60,000</option>
-                                <option value="70000">&pound; 70,000</option>
-                                <option value="80000">&pound; 80,000</option>
-                                <option value="90000">&pound; 90,000</option>
-                                <option value="100000">&pound; 100,000</option>
-                                <option value="110000">&pound; 110,000</option>
-                                <option value="120000">&pound; 120,000</option>
-                                <option value="200000">&pound; 200,000</option>
-                                <option value="300000">&pound; 300,000</option>
-                                <option value="400000">&pound; 400,000</option>
-                                <option value="500000">&pound; 500,000</option>
-                                <option value="600000">&pound; 600,000</option>
-                                <option value="700000">&pound; 700,000</option>
-                                <option value="800000">&pound; 800,000</option>
-                                <option value="900000">&pound; 900,000</option>
-                                <option value="1000000">&pound;1 million+</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
                             </select>
-                        </div>
                     </div>
 
-                <div class="contents__view">
+                <div id="contents__view" class="contents__view">
                         <div id="burger-wrap">
                             <a class="burger"><span></span></a>
+                            <div class="subMenu">
+                                <div><button type="button" class="menuItem alignLeft">왼쪽 정렬</button></div>
+                                <div><button type="button" class="menuItem alignCenter">가운데 정렬</button></div>
+                                <div><button type="button" class="menuItem alignRight">오른쪽 정렬</button></div>
+                                <div><button type="button" class="menuItem fileChange">변경</button></div>
+                                <div><button type="button" class="menuItem fileRemove">삭제</button></div>
+                            </div>
                         </div>
                         <div id="drop-zone">
                             <img src="" alt="">
